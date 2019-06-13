@@ -14,15 +14,22 @@ The latest panther debugger Gen2a-03-01-2018.zip with updated "JPL stack" tab fe
      A Panther/Web application to debug, Eclipse and Apache.
 
 #### Eclipse & Apache Tomcat
+
    i.	Install a later version of Eclipse- 32bit
-  ii.    Please setup Apache Tomcat as a Test Server in Eclipse UI.[Click Here](https://github.com/ProlificsPanther/PantherWebDebugger/releases/tag/v1.0)
+   
+  ii.    Please setup Apache Tomcat as a Test Server in Eclipse UI. [Click Here](https://github.com/ProlificsPanther/PantherWebDebugger/releases/tag/v1.0)
 
 #### Add Jar Files to CLASSPATH in the Panther Web/ini file
    i.	prowebdbg.jar
+   
   ii.    tyrus-standalone-client-1.13.1.jar
+  
  iii.    websocket-api.jar
+ 
   iv.	javax.json-api-1.0.jar
+  
    v.	javax.json-1.0.4.jar
+   
   vi.	pro5.jar. See use the exact version from $SMBASE/config
 
 ####  Update Panther/Web ini file
