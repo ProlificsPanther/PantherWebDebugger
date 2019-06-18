@@ -1,12 +1,12 @@
 # Debugger
-The latest Panther Debugger Gen2a-03-01-2018.zip with updated "JPL stack" tab feature.
+The latest Panther Debugger Gen2a with the  updated "JPL stack" tab feature.
 
 # PANTHER WEB DEBUGGER
-  Panther's Web debugger provides you the ability to view and analyze all JPL source in a Panther Web application. You can:
+  Panther's Web debugger provides you the ability to view and analyze all JPL source in a Panther Web application. You are able to:
   *	Step through JPL, stopping to examine data.
-  *	Set breakpoints in JPL code on which to interrupt program execution.
+  *	Set breakpoints in JPL to interrupt program execution.
   *	Examine application data in JPL variables, JPL arrays or expressions.
-  *	Review tracing activity in the log file. Tracing messages can also be written to a user specified log file.
+  *	Review tracing activity in the log file. Trace messages can also be written to a user specified log file.
 
 ### Installing and configuring Panther/Web Debugger Win32
 
@@ -40,7 +40,7 @@ The latest Panther Debugger Gen2a-03-01-2018.zip with updated "JPL stack" tab fe
    4.	ServerTimeout= <set to blank>
 
 ####  Enable tracing in your application
-   To enable tracing, execute the below call in your very first JPL screen of your application, or in a JPL file that is     loaded when your application first starts, .i.e. file point to by SMINITJPL call sm_trace("ALL websocket=default")
+   To enable tracing, execute the below call in your very first JPL screen of your application, or in a JPL file that is     loaded when    your application first starts, .i.e. file point to by SMINITJPL call sm_trace("ALL websocket=default")
  
 ####  Import Debugger zip File
    1.	Import Gen*. zip project into your workspace:
