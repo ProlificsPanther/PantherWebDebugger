@@ -1,5 +1,5 @@
 # Debugger
-The latest panther debugger Gen2a-03-01-2018.zip with updated "JPL stack" tab feature.
+The latest Panther Debugger Gen2a-03-01-2018.zip with updated "JPL stack" tab feature.
 
 # PANTHER WEB DEBUGGER
   Panther's Web debugger provides you the ability to view and analyze all JPL source in a Panther Web application. You can:
@@ -17,14 +17,15 @@ The latest panther debugger Gen2a-03-01-2018.zip with updated "JPL stack" tab fe
 
    i.	Install a later version of Eclipse- 32bit
    
-  ii.    Please setup Apache Tomcat as a Test Server in Eclipse UI. [Click Here](https://github.com/ProlificsPanther/PantherWebDebugger/releases/tag/v1.0)
-
+  ii. Please setup Apache Tomcat as a Test Server in Eclipse UI. [Click Here](https://github.com/ProlificsPanther/PantherWebDebugger/releases/tag/v1.0)
+  
+  iii. In the smvars file set SMJAVALIBRARY to the location of the jvm.dll.
 #### Add Jar Files to CLASSPATH in the Panther Web/ini file
    i.	prowebdbg.jar
    
-  ii.    tyrus-standalone-client-1.13.1.jar
+  ii. tyrus-standalone-client-1.13.1.jar
   
- iii.    websocket-api.jar
+ iii. websocket-api.jar
  
   iv.	javax.json-api-1.0.jar
   
@@ -43,7 +44,7 @@ The latest panther debugger Gen2a-03-01-2018.zip with updated "JPL stack" tab fe
  
 ####  Import Debugger zip File
    1.	Import Gen*. zip project into your workspace:
-   2.	 File->Import...
+   2. File->Import...
    3.	General->Existing Projects into Workspace
    4.	Next
    5.	Choose the 'Select archive file' radio button
@@ -51,7 +52,8 @@ The latest panther debugger Gen2a-03-01-2018.zip with updated "JPL stack" tab fe
    7.	Finish
 
 ####  Fix Java Build Path and export prowebdbg.jar
-   1.	After importing the project, edit the Libraries used in Java Build Path by correcting the locations of the JAR files on your machine. Right click on the Project -> Properties->Java Build Path
+   1.	After importing the project, edit the Libraries used in Java Build Path by correcting the locations of the JAR files on your     
+      machine. Right click on the Project -> Properties->Java Build Path
    2.	Verify that the code can be rebuilt by cleaning the project and rebuilding
    3.	Export the project as a java jar file to the location where your prowebdbg.jar is present and replace that jar with your project.
    4.	Add Web Module Gen* to Tomcat Server
@@ -60,7 +62,7 @@ The latest panther debugger Gen2a-03-01-2018.zip with updated "JPL stack" tab fe
 
 ####  Test the Debugger
    1.	Enter this URL to access the Debugger http://localhost: 8085/Gen2a/Debugger
-   2.	Next add the applications’ URL to the Application URL field, .i.e. http://localhost/hr/login.jam , then press Go.
+   2.	Next add the applications’ URL to the Application URL field, .i.e. http://localhost/hr/login.jam  ( for example) , then press Go.
    3.	The Application will open in the next Browser Tab
 
 ###   How to use the debugger
