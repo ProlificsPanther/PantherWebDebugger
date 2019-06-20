@@ -11,7 +11,7 @@ The latest Panther Debugger Gen2a with the  updated "JPL stack" tab feature.
 ### Installing and configuring Panther/Web Debugger Win32
 
 #### Prerequisite
-     A Panther/Web application to debug, Eclipse and Apache.
+     A Panther/Web application 5.52 or later, Eclipse and Apache.
 
 #### Eclipse & Apache Tomcat
 
