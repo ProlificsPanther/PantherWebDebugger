@@ -1,5 +1,5 @@
 # Debugger
-The latest Panther Debugger Gen2a with the  updated "JPL stack" tab feature.
+Download the latest version  of  Panther Web Debugger, Gen2a. It includes an  updated "JPL stack" tab feature.
 
 # PANTHER WEB DEBUGGER
   Panther's Web debugger provides you the ability to view and analyze all JPL source in a Panther Web application. You are able to:
