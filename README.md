@@ -8,28 +8,21 @@
 ### Installing and configuring Panther/Web Debugger Win32
 
 #### Prerequisite
-     A Panther Web application 5.52 or later, Eclipse and Apache. The Panther Web Debugger can be installed on your  Panther development environment. 
+     A Panther Web application 5.52 or later, Eclipse and Apache. The Panther Web Debugger can be installed on your  Panther development environment.  The Panther Debugger Servlet must be on the same machine as the  Panther Web Server (JServer).
 
 #### Eclipse & Apache Tomcat
-
    i.	Install a later version of Eclipse- 32bit
-   
-  ii. Please setup Apache Tomcat as a Test Server in Eclipse UI. [Click Here](https://github.com/ProlificsPanther/PantherWebDebugger/releases/tag/v1.0)
-  
-  iii. In the smvars file set SMJAVALIBRARY to the location of the jvm.dll.
+   ii. Please setup Apache Tomcat as a Test Server in Eclipse UI. [Click Here](https://github.com/ProlificsPanther/PantherWebDebugger/releases/tag/v1.0)
+    iii. In the smvars file set SMJAVALIBRARY to the location of the jvm.dll.
+    
 #### Add Jar Files to CLASSPATH in the Panther Web/ini file
-   i.	prowebdbg.jar
+   i.	  prowebdbg.jar
+   ii.  tyrus-standalone-client-1.13.1.jar
+   iii. websocket-api.jar
+   iv.	javax.json-api-1.0.jar
+    v.	javax.json-1.0.4.jar
+   vi.	pro5.jar. See use the exact version from $SMBASE/config
    
-  ii. tyrus-standalone-client-1.13.1.jar
-  
- iii. websocket-api.jar
- 
-  iv.	javax.json-api-1.0.jar
-  
-   v.	javax.json-1.0.4.jar
-   
-  vi.	pro5.jar. See use the exact version from $SMBASE/config
-
 ####  Update Panther/Web ini file
    1.	WebSocketClass= com.prolifics.websocket.DebugMessenger
    2.	NumServers=1
@@ -54,7 +47,6 @@
    2.	Verify that the code can be rebuilt by cleaning the project and rebuilding
    3.	Export the project as a java jar file to the location where your prowebdbg.jar is present and replace that jar with your project.
    4.	Add Web Module Gen* to Tomcat Server
-
 *If you have conflicting port numbers, please chose an available port number.
 
 ####  Test the Debugger
