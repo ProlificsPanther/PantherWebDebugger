@@ -8,7 +8,7 @@
 ### Installing and configuring Panther/Web Debugger Win32
 
 #### Prerequisite
-     A Panther Web application 5.52 or later, Eclipse and Apache. The Panther Web Debugger can be installed on your  Panther development environment.  The Panther Debugger Servlet must be on the same machine as the  Panther Web Server (JServer).
+     A Panther Web application 5.52 or later, Eclipse and Apache. The Panther Web Debugger can be installed on your  Panther development environment.  The Panther Debugger Servlet must run on the same machine as the  Panther Web Server (JServer).
 
 #### Eclipse & Apache Tomcat
    i.	Install a later version of Eclipse- 32bit
