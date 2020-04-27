@@ -1,9 +1,8 @@
-# PANTHER WEB DEBUGGER
-  This version includes an  updated "JPL stack" tab feature. Panther's Web debugger provides you the ability to view and analyze all JPL source in a Panther Web application. You are able to:
+  This version includes an updated "JPL stack" tab feature. Panther's Web debugger provides you with the ability to view and analyze all JPL source in a Panther Web application. You can:
   *	Step through JPL, stopping to examine data.
   *	Set breakpoints in JPL to interrupt program execution.
   *	Examine application data in JPL variables, JPL arrays or expressions.
-  *	Review tracing activity in the log file. Trace messages can also be written to a user specified log file.
+  *	Review tracing activity in the log file. Trace messages can also be written to a user-specified log file.
 
 ### Installing and configuring Panther/Web Debugger Win32
 
@@ -30,7 +29,7 @@
    4.	ServerTimeout= <set to blank>
 
 ####  Enable tracing in your application
-   To enable tracing, execute the below call in your very first JPL screen of your application, or in a JPL file that is     loaded when    your application first starts, .i.e. file point to by SMINITJPL call sm_trace("ALL websocket=default")
+   To enable tracing, execute the below call in the very first JPL screen of your application, or in a JPL file that is     loaded when    your application first starts, .i.e. file point to by SMINITJPL call sm_trace("ALL websocket=default")
  
 ####  Import Debugger zip File
    1.	Import Gen*. zip project into your workspace:
@@ -42,8 +41,7 @@
    7.	Finish
 
 ####  Fix Java Build Path and export prowebdbg.jar
-   1.	After importing the project, edit the Libraries used in Java Build Path by correcting the locations of the JAR files on your     
-      machine. Right click on the Project -> Properties->Java Build Path
+   1.	After importing the project, edit the Libraries used in Java Build Path by correcting the locations of the JAR files on your machine. Right-click on the Project -> Properties->Java Build Path
    2.	Verify that the code can be rebuilt by cleaning the project and rebuilding
    3.	Export the project as a java jar file to the location where your prowebdbg.jar is present and replace that jar with your project.
    4.	Add Web Module Gen* to Tomcat Server
@@ -51,7 +49,7 @@
 
 ####  Test the Debugger
    1.	Enter this URL to access the Debugger http://localhost: 8085/Gen2a/Debugger
-   2.	Next add the applications’ URL to the Application URL field, .i.e. http://localhost/hr/login.jam  ( for example) , then press Go.
+   2.	Next add the applications’ URL to the Application URL field, .i.e. http://localhost/hr/login.jam  ( for example), then press Go.
    3.	The Application will open in the next Browser Tab
 
 ###   How to use the debugger
@@ -68,14 +66,14 @@
    Ability to introspect values of variable/fields.
 
 ####  JPL Module Window
-   In this window you will be able to see the name of the JPL file that us executing. When breakpoints are set, you can navigate to this window and check to see which JPL file is being executed.
+   In this window, you will be able to see the name of the JPL file that us executing. When breakpoints are set, you can navigate to this window and check to see which JPL file is being executed.
 
 ####  Buttons
 
 ##### Play (Continue to next break point)
    As the name indicates this button helps us continue to the next breakpoint.
 
-   *   For example, if we have set 3 breakpoints, once we start debugging, it will stop at the 1st breakpoint; if we want to inspect the JPL line by line, select the step in button (2nd from Left) OR use the Play button to continue to the next break  point ignoring the remaining JPL code.
+   *   For example, if we have set 3 breakpoints, once we start debugging, it will stop at the 1st breakpoint; if we want to inspect the JPL line by line, select the step in button (2nd from Left) OR use the Play button to continue to the next breakpoint ignoring the remaining JPL code.
    *   If only 1 breakpoint is set and when it stops at that breakpoint, if we choose Play, it takes us to the end of that JPL file, which specifies that we don’t have any further breakpoints set.
 
 ##### Step In (Continue to next event)
@@ -88,7 +86,7 @@
    This button helps to break our trace where ever and whenever needed.
 
    * If you have not set any breakpoints and you wish to check the code line by line using the Step in button (2nd from the left), you can click the Break button and perform any Panther event. The Play, Step In and Step over buttons are enabled from there and you can do either of the below:
-  ** Step In line by line
+  ** Step Inline by line
   ** Step Over at the end of proc if a proc has started
 
 
@@ -100,18 +98,18 @@
 ####  Setting Breakpoints
 
    * Select the breakpoint type for which you need to set a breakpoint
-   * If the type you choose is Any Jpl, provide a proc name in the location field, which is the name of your JPL procedure. Then you can proceed with the "Play Button or Step over button" to continue further.
-   * If the type you choose is a JPL Module you will have to provide the JPL file name for which you want to set a breakpoint in.
+   * If the type you choose is Any Jpl, provide a proc name in the location field, which is the name of your JPL procedure. Then you can proceed with the "Play Button or Step over the button" to continue further.
+   * If the type you choose is a JPL Module you will have to provide the JPL file name for which you want to set a breakpoint.
    * If you want to set a breakpoint in a proc, enter a JPL proc name in the location field
-   * If you need to set a breakpoint for a line number please enter a line number and Press enter.
+   * If you need to set a breakpoint for a line number please enter a line number and press enter.
    * To continue debugging, click on the Play or Step Over button.
 
 ####  Watching Data
 
- In this section you need to enter the name of a field/variable that you like to view its value.
+ In this section, you need to enter the name of a field/variable that you like to view its value.
    * Set a breakpoint, enter a variable name in the “Variables & Expressions” tab and click the Play button.
    * Tracing will stop at the breakpoint. Click the Step In button. As you trace the JPL, you will be able to view the value of that variable in this window.
-   * A “?” value indicates that the variable/jpl has no value.
+   * A “?” value indicates that the variable/JPL has no value.
 
 ####  NOTE:
 
@@ -121,6 +119,6 @@
 
 For YouTube video please [Click Here](https://www.youtube.com/watch?v=AAfHsUU5v-Y)
 
-[Click Here](https://www.prolifics.com/panther-trial-license-request) for a 45 day license.
+[Click Here](https://www.prolifics.com/panther-trial-license-request) for a 45-day license.
 
-How to setup a Panther Servlet Web Application? [Click Here](https://github.com/ProlificsPanther/PantherWeb/releases)
+How to set up a Panther Servlet Web Application? [Click Here](https://github.com/ProlificsPanther/PantherWeb/releases)
