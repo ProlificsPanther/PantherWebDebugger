@@ -3,6 +3,8 @@
   *	Set breakpoints in JPL to interrupt program execution.
   *	Examine application data in JPL variables, JPL arrays or expressions.
   *	Review tracing activity in the log file. Trace messages can also be written to a user-specified log file.
+###  How the Debugger Works
+The Panther Web Debugger uses Panther's tracing mechanism to implement breakpoints and report trace information to the Panther Web Debugger servlet.  When a WebSocket connection has been established, at every tracepoint the jserver sends a trace message over the WebSocket to the Panther Web Debugger servlet and waits for a reply.  If it does not get a reply, it will just 'hang', as if at a breakpoint.  The servlet normally just tells the jserver to continue unless it is stopped at an actual intended breakpoint.  This request/response communication over the web socket at every tracepoint is what hinders normal performance when using the Panther Web Debugger.
 
 ### Installing and configuring Panther/Web Debugger Win32
 
@@ -112,6 +114,10 @@
    * A “?” value indicates that the variable/JPL has no value.
 
 ####  NOTE:
+
+  You are provided with all of the Java source code for the Panther Web Debugger in the Gen2a open-source project.  You may review how the WebSocket messaging back and forth between the Jserver and the Debug Servlet is orchestrated.  In Requester.java a GET request causes the Servlet to create a 'WebSocketURL' cookie containing the Request's server name and port number.  When you call sm_trace() with the options you used, the Jserver instantiates a DebugMessenger class, which makes a WebSocket connection to the URI passed in the cookie.  Once the connection is established, at each tracepoint the Jserver sends a trace message in DebugMessenger, and then enters a loop that processes various requests until told to continue to the next tracepoint.  The Debug Servlet processes WebSocket messages in server.java.
+
+  Most of the classes in the project do extensive logging through a java.util.logging.Logger that is named for the class it is used in. There is a debug variable in these classes that is set to 'false'.  If you recompile and set 'debug' to 'true', these classes will write to a 'debug.log' file.
 
 #####  Once you set a Breakpoint you must continue Debugging; i.e. hit Play/Step Over. Breakpoints are NOT saved when you refresh the browser.
 
