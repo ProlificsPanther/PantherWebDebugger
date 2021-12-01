@@ -12,17 +12,17 @@ The Panther Web Debugger uses Panther's tracing mechanism to implement breakpoin
      A Panther Web application 5.52 or later, Eclipse and Apache. The Panther Web Debugger can be installed on your  Panther development environment.  The Panther Debugger Servlet must run on the same machine as the  Panther Web Server (JServer).
 
 #### Eclipse & Apache Tomcat
-   i.	Install a later version of Eclipse- 32bit
-   ii. Please setup Apache Tomcat as a Test Server in Eclipse UI. [Click Here](https://github.com/ProlificsPanther/PantherWebDebugger/releases/tag/v1.0)
-    iii. In the smvars file set SMJAVALIBRARY to the location of the jvm.dll.
+   i.	Install a later version of Eclipse- 32bit <br>
+   ii. Please setup Apache Tomcat as a Test Server in Eclipse UI. [Click Here](https://github.com/ProlificsPanther/PantherWebDebugger/releases/tag/v1.0) <br>
+   iii. In the smvars file set SMJAVALIBRARY to the location of the jvm.dll <br>
     
 #### Add Jar Files to CLASSPATH in the Panther Web/ini file
-   i.	  prowebdbg.jar
-   ii.  tyrus-standalone-client-1.13.1.jar
-   iii. websocket-api.jar
-   iv.	javax.json-api-1.0.jar
-    v.	javax.json-1.0.4.jar
-   vi.	pro5.jar. See use the exact version from $SMBASE/config
+   i.	  prowebdbg.jar <br>
+   ii.  tyrus-standalone-client-1.13.1.jar <br>
+   iii. websocket-api.jar <br>
+   iv.	javax.json-api-1.0.jar <br>
+    v.	javax.json-1.0.4.jar <br>
+   vi.	pro5.jar. See use the exact version from $SMBASE/config <br>
    
 ####  Update Panther/Web ini file
    1.	WebSocketClass= com.prolifics.websocket.DebugMessenger
