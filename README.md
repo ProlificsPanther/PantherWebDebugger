@@ -14,7 +14,7 @@ The Panther Web Debugger uses Panther's tracing mechanism to implement breakpoin
 #### Eclipse & Apache Tomcat
    i.	Install a later version of Eclipse- 32bit <br>
    ii. Please setup Apache Tomcat as a Test Server in Eclipse UI. [Click Here](https://github.com/ProlificsPanther/PantherWebDebugger/releases/tag/v1.0) <br>
-   iii. In the smvars file set SMJAVALIBRARY to the location of the jvm.dll <br>
+   iii. In the smvars file set SMJAVALIBRARY to the location of the jvm.dll on Windows and libjvm.so on Linux<br>
     
 #### Add Jar Files to CLASSPATH in the Panther Web/ini file
    i.	  prowebdbg.jar <br>
