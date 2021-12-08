@@ -1,7 +1,7 @@
 To run Panther Web Debugger inside a preconfigured Docker container with all the require setup for debugger.
 
 ###  Panther Debugger in Docker Container
-Panther Support team has built a docker image https://hub.docker.com/repository/docker/prolificspanther/debugger and with the help of it we can create and run a container that contains preconfigured setup to run a Panther debugger to debug your application.
+Panther Support team has built a docker image https://hub.docker.com/repository/docker/prolificspanther/mutest1 and with the help of it we can create and run a container that contains preconfigured setup to run a Panther debugger to debug your application.
 
 #### Prerequisite
 Docker should be installed on your machine. To run docker image on Windows Docker Desktop application should be installed on Windows OS.
