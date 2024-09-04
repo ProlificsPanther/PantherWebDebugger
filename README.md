@@ -1,4 +1,4 @@
-  This version includes an updated "JPL stack" tab feature. Panther's Web debugger provides you with the ability to view and analyze all JPL source in a Panther Web application. You can:
+  This version includes an updated "JPL stack" tab feature. Panther's Web debugger provides the ability to view and analyze all JPL source in a Panther Web application. You can:
   *	Step through JPL, stopping to examine data.
   *	Set breakpoints in JPL to interrupt program execution.
   *	Examine application data in JPL variables, JPL arrays or expressions.
